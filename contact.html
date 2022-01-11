@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="https://kit.fontawesome.com/81264b6916.js" crossorigin="anonymous"></script>
+    <script src="assets/scripts/main.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    </style>
+    <title>Document</title>
+</head>
+
+<body class="home-container">
+    <header>
+        <div class="position">
+            <a href=""><img class="logo" src="assets/pictures/gjoelkro1.jpg" alt="gjoel kro"></a>
+
+            <a href="" id="mobile"><i class="fas fa-bars"></i></a>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="lunch.html">Lunch</a></li>
+                <li><a href="">Dinner</a></li>
+                <li><a href="">The restaurant</a></li>
+                <li><a href="">Surroundings</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="">About the place</a>
+                    <ul class="dropdown">
+                        <li><a href="">The restaurant</a></li>
+                        <li><a href="">Surroundings</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Menu</a>
+                    <ul class="dropdown">
+                        <li><a href="lunch.html">Lunch</a></li>
+                        <li><a href="">Dinner</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Events</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact">
+        <h1 class="h1">Contact</h1>
+        <div class="contact1">
+            <i class="fas fa-phone-alt"></i>
+            <p>+45 22 36 76 87</p>
+        </div>
+
+        <form action="form.html">
+            <div class="container-form">
+                <h2>Get in touch</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et</p>
+
+                <input type="text" class="field" placeholder="Name" autocomplete="off" required />
+
+                <input type="text" class="field" placeholder="Surname" readonly autofocus />  
+
+                <input type="text" class="field" placeholder="E-mail" readonly autofocus required />
+
+                <textarea rows="6" class="field" placeholder="Message" required></textarea>
+                <input class="btn" type="submit" value="Send" />
+            </div>
+        </form>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <section>
+            <h5>Opening hours</h5>
+            <p>Wednesday-Sunday: 12:00-22:00</p>
+            <p>Monday-Tuesday: closed</p>
+        </section>
+
+        <section>
+            <h5>Social media</h5>
+
+            <div class="icon">
+                <i class="fab fa-instagram"></i>
+                <p>Instagram</p>
+            </div>
+
+            <div class="icon">
+                <i class="fab fa-facebook"></i>
+                <p>Facebook</p>
+            </div>
+
+        </section>
+
+        <section>
+            <h5>Contact</h5>
+            <address>
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                    <p>+45 22367687</p>
+                </div>
+
+                <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Fjordgade 18. 9440</p>
+                </div>
+            </address>
+        </section>
+    </footer>
+</body>
+
+</html>
