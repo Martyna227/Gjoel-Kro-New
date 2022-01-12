@@ -45,9 +45,12 @@ h1, h2, h3, h4, h5 {
     padding: 0.5rem 0.8rem;
     border-radius: 0.5rem;
     opacity: .85;
+     width: fit-content;
     font-weight: 700;
     text-align: center;
+    align-self: center;
     text-transform: uppercase;
+
 }
 
 /* mobile homepage*/
@@ -259,8 +262,7 @@ footer address {
 /* LUNCH MOBILE PAGE */
 
 .lunch-container {
-    background-color: var(--darkblue);
-    color: rgba(255, 255, 255, 0.699);
+    background-color: black;
 }
 
 .dessert-side {
@@ -269,7 +271,7 @@ footer address {
 }
 
 .home-btn {
-    padding: 0 2rem;
+    margin-left: 5vw;
     text-align: center;
 }
 
@@ -283,12 +285,14 @@ footer address {
     color: var(--gold);
     border-bottom: 1px solid var(--gold);
     width: fit-content;
-    margin: 0 0 0 5vw;
+    margin: 5vw 0 0 5vw;
 }
 
 .lunch-main {
     display: flex;
     flex-direction: column;
+    background-color: var(--darkblue);
+    color: rgba(255, 255, 255, 0.699);
     gap: 2vw;
 }
 
@@ -310,12 +314,11 @@ footer address {
     margin: 5vw;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid var(--gold);
     gap: 2vw;
     padding-bottom: 1vw;
 }
 
-.lunch-dishes > p, h4, h2 {
+.lunch-dishes > h2, .lunch-dishes > h4, .lunch-dishes p {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
 }
@@ -336,6 +339,10 @@ footer address {
     font-size: 3.5vw;
     font-weight: 300;
     padding-bottom: 2vw;
+}
+
+.lunch-border {
+    border-bottom: 1px solid var(--gold);
 }
 
 .lunch-img-mobile {
@@ -364,12 +371,6 @@ footer address {
     padding-left: 5vw;
 }
 
-.dish-booking {
-    align-self: center;
-    margin: 15vw 0;
-    color: var(--darkblue);
-}
-
 .lunch-img-desk {
     display: none;
 }
@@ -377,6 +378,7 @@ footer address {
 .lunch-suggestion {
     display: none;
 }
+
 
 /* mobile EVENTS page */
 .event {
