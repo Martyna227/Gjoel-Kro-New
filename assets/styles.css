@@ -285,7 +285,7 @@ footer address {
     color: var(--gold);
     border-bottom: 1px solid var(--gold);
     width: fit-content;
-    margin: 5vw 0 0 5vw;
+    /* margin: 5vw 0 0 5vw; */
 }
 
 .lunch-main {
@@ -293,17 +293,18 @@ footer address {
     flex-direction: column;
     background-color: var(--darkblue);
     color: rgba(255, 255, 255, 0.699);
-    gap: 2vw;
+    gap: 5vw;
+    padding: 3rem 2rem;
 }
 
 .lunch-time {
     color: var(--gold);
-    margin: 0 0 0 5vw;
     font-size: 5vw;
 }
 
 .lunch-price {
-    font-size: 5vw;
+    align-self: center;
+    font-size: 4.3vw;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: lighter;
@@ -311,11 +312,11 @@ footer address {
 }
 
 .lunch-dishes {
-    margin: 5vw;
+    /* margin: 5vw; */
     display: flex;
     flex-direction: column;
     gap: 2vw;
-    padding-bottom: 1vw;
+    padding-bottom: 3.5vw;
 }
 
 .lunch-dishes > h2, .lunch-dishes > h4, .lunch-dishes p {
@@ -325,7 +326,7 @@ footer address {
 
 .lunch-container h2 {
     display: flex;
-    padding-bottom: 5vw;
+    padding: 8vw 0;
     font-size: 5.5vw;
     font-weight: 500;
 }
@@ -350,12 +351,12 @@ footer address {
     flex-direction: column;
 }
 
-.lunch-img-mobile img {
+/* .lunch-img-mobile img {
     max-width: 100vw;
     align-self: center;
-}
+} */
 
-.dessert-side {
+/* .dessert-side {
     display: flex;
     flex-direction: column;
     gap: 5vw;
@@ -365,10 +366,14 @@ footer address {
 .dessert-side > h2 {
     align-self: center;
     border-bottom: solid 1px var(--darkblue);
-}
+} */
 
-.dessert-side > h4 {
+/* .dessert-side > h4 {
     padding-left: 5vw;
+} */
+
+.lunch-img-mobile {
+    display: none;
 }
 
 .lunch-img-desk {
