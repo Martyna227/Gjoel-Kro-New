@@ -1019,7 +1019,7 @@ fieldset {
         color: white;
     }
 
-    .btn {
+    .btn-none {
         display: none;
     }
 
@@ -1027,7 +1027,7 @@ fieldset {
         display: block;
     }
 
-    .sorrounding-article:hover>.btn {
+    .sorrounding-article:hover>.btn-none {
         display: block;
     }
 
