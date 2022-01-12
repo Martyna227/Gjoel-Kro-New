@@ -276,7 +276,7 @@ footer address {
 }
 
 .home-btn a, .fa-caret-left {
-    font-size: 1.5rem;
+    font-size: 7vw;
     color: var(--gold);
 }
 
@@ -312,10 +312,9 @@ footer address {
 }
 
 .lunch-dishes {
-    /* margin: 5vw; */
     display: flex;
     flex-direction: column;
-    gap: 2vw;
+    gap: 1.5vw;
     padding-bottom: 3.5vw;
 }
 
@@ -350,27 +349,6 @@ footer address {
     display: flex;
     flex-direction: column;
 }
-
-/* .lunch-img-mobile img {
-    max-width: 100vw;
-    align-self: center;
-} */
-
-/* .dessert-side {
-    display: flex;
-    flex-direction: column;
-    gap: 5vw;
-    padding: 5vw 0;
-}
-
-.dessert-side > h2 {
-    align-self: center;
-    border-bottom: solid 1px var(--darkblue);
-} */
-
-/* .dessert-side > h4 {
-    padding-left: 5vw;
-} */
 
 .lunch-img-mobile {
     display: none;
@@ -1078,5 +1056,73 @@ fieldset {
 
     .contact .btn {
         margin-top: 0;
+    }
+
+    /* Lunch for desktop */
+
+    .lunch-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header"
+        "apertizers image1"
+        "second image2"
+        "desserts image4"
+        "book book"
+        "reccommend reccommend"
+        ;
+        padding: 3rem 2rem;
+    }
+
+    .h1-golden {
+        grid-area: header;
+        font-size: 5vw;
+        border-bottom: solid 1px var(--gold);
+        justify-self: center;
+    }
+
+    .lunch-time {
+        display: none;
+    }
+
+    .lunch-price {
+        font-size: 2vw;
+        color: var(--gold);
+    }
+
+    .apertizers {
+        grid-area: apertizers;
+    }
+
+    .apertizers > h2, .apertizers > h4, .apertizers > p,
+    .seconds > h2, .seconds > h4, .seconds > p,
+    .desserts > h2, .desserts h4, .desserts > p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .apertizers > h2, .seconds > h2, .desserts > h2 {
+        font-size: 2.5vw;
+        color: var(--gold);
+        margin-bottom: 2.5vw;
+    }
+
+    .apertizers h4, .seconds > h4, .desserts h4 {
+        font-size: 2vw;
+    }
+
+    .apertizers p, .seconds > p, .desserts p {
+        font-size: 1.5vw;
+    }
+
+    .lunch-main {
+        padding: 7.5vw;
+        gap: 5vw;
+    }
+
+    .lunch-dishes {
+        gap: 1vw;
+        padding: 5vw 0 3vw 0;
     }
 }
