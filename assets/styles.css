@@ -624,16 +624,35 @@ fieldset {
 }
 
 
-/* @media only screen and (min-device-width: 390px) and (max-device-width: 767px) and (orientation: landscape) {
+@media only screen and (min-width: 500px) and (max-width: 1023px) {
 
-    .lunch > h2 {
-        font-size: 7rem;
+    .lunch h2, .dinner h2, .events h2 {
+        font-size: 6rem;
+    }
+
+    .lunch p, .dinner p, .events p {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 3.5vw;
+    }
+
+    .sorrounding-article h2{
+        font-size: 8vw;
+        padding-bottom: 2.5vw;
+    }
+
+    footer h5 {
+        font-size: 8vw;
     }
         
-} */
+    footer p {
+        font-size: 4vw;
+    }
+}
 
-@media screen and (min-device-width: 768px) 
-  and (max-device-width: 1112px)  {
+@media screen and (min-device-width: 768px)  {
 
 
     /* surroundings */
@@ -645,8 +664,11 @@ fieldset {
         font-size: 1vw;
     }  
 
-    .sorrounding-article {
-        padding: 3rem;
+
+
+    .sorrounding-article h2{
+        font-size: 8vw;
+        padding-bottom: 2.5vw;
     }
 
     header {
@@ -671,7 +693,7 @@ fieldset {
     }
 
     .btn {
-        font-size: 1rem;
+        font-size: 3vw;
         padding: 0.5rem 2rem; ;
     }
     .container-form {
@@ -719,6 +741,7 @@ fieldset {
 
 
   @media screen and (min-width: 1024px) {
+
 
     .home-btn {
         display: none;
@@ -1351,7 +1374,7 @@ fieldset {
     }
     
     
-    .btn {
+    .dinner .btn, .lunch .btn {
         padding: 1vw;
         font-size: 1vw;
     }
