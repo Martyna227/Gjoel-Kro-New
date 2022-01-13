@@ -1125,4 +1125,8 @@ fieldset {
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .lunch-suggestion {
+        display: flex;
+    }
 }
