@@ -1060,26 +1060,10 @@ fieldset {
 
     /* Lunch for desktop */
 
-    .lunch-main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "header header"
-        "apertizers image1"
-        "second image2"
-        "desserts image4"
-        "book book"
-        "reccommend reccommend"
-        ;
-        padding: 3rem 2rem;
-    }
-
     .h1-golden {
-        grid-area: header;
         font-size: 5vw;
         border-bottom: solid 1px var(--gold);
-        justify-self: center;
+        align-self: center;
     }
 
     .lunch-time {
@@ -1124,5 +1108,21 @@ fieldset {
     .lunch-dishes {
         gap: 1vw;
         padding: 5vw 0 3vw 0;
+    }
+
+    .apertizers-img, .seconds-img, .desserts-img {
+        display: flex;
+        align-self: center;
+    }
+
+    .apertizers-img > img, .seconds-img > img, .desserts-img > img {
+        width: auto;
+        height: auto;
+    }
+
+    .apertizers-side, .seconds-side, .desserts-side {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
