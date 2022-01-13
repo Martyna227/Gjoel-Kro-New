@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5 {
     color: var(--darkblue);
     padding: 0.5rem 0.8rem;
     border-radius: 0.5rem;
-    opacity: .85;
+    opacity: .9;
      width: fit-content;
     font-weight: 700;
     text-align: center;
@@ -154,7 +154,7 @@ p {
 
 
 .lunch {
-    background-image: url(pictures/dish-mobile.jpg);
+    background-image: url(pictures/Mussels---mobile.jpg);
     background-size: cover;
     width: 100%;
     height: 100vw;
@@ -163,7 +163,7 @@ p {
 
 
 .dinner {
-    background-image: url(pictures/dish2-mobile.jpg);
+    background-image: url(pictures/dishv2---mobile.jpg);
     background-size: cover;
     width: 100%;
     height: 100vw;
@@ -177,7 +177,7 @@ p {
 }
 
 .events {
-    background-image: url(pictures/eventsteaser-mobile.jpg);
+    background-image: url(pictures/event-mobile.jpg);
     background-size: cover;
     width: 100%;
     height: 100vw;
@@ -260,6 +260,14 @@ footer address {
 
 
 /* LUNCH MOBILE PAGE */
+
+.home-btn {
+    display: block;
+}
+.logo {
+    display: none;
+}
+
 
 .lunch-container {
     background-color: black;
@@ -401,6 +409,8 @@ footer address {
 .event p {
     line-height: 2rem;
     color: rgba(0, 0, 0, 0.800);
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .event-gallery img:first-child, .event-gallery img:nth-child(2) {
@@ -459,7 +469,8 @@ footer address {
 
 .restaurant p {
     line-height: 2rem;
-    color: rgba(0, 0, 0, 0.800);
+    font-weight: 300;
+    color: rgb(0, 0, 0);
 }
 
 /* Sorroundings for mobile */
@@ -470,8 +481,17 @@ footer address {
     line-height: 1.5;
 }
 
-.dekstop-sorrounding, .sorrounding-article h2 {
+.dekstop-sorrounding {
     display: none;
+}
+
+.sorrounding-article h2 {
+    font-size: 2rem;
+    text-align: left;
+    color: white;
+    padding-bottom: 1rem;
+    opacity: .9;
+    font-weight: 800;
 }
 
 .sorrounding h1 {
@@ -480,10 +500,14 @@ footer address {
 
 .sorrounding {
     background-color: var(--darkblue);
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .sorrounding-article {
-    padding: 14vw 9vw 0 9vw;
+    padding: 18vw 9vw 0 9vw;
     text-align: center;
 }
 
@@ -495,8 +519,10 @@ footer address {
 
 .sorrounding-article p {
     color: white;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     text-align: left;
+    opacity: .8;
+    font-weight: 300;
 
 }
 
@@ -582,6 +608,7 @@ fieldset {
     color: white;
     opacity: .7;
     font-family: 1rem;
+    font-weight: 300;
 }
 
 .form-response {
@@ -596,7 +623,110 @@ fieldset {
     margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 1200px) {
+
+/* @media only screen and (min-device-width: 390px) and (max-device-width: 767px) and (orientation: landscape) {
+
+    .lunch > h2 {
+        font-size: 7rem;
+    }
+        
+} */
+
+@media screen and (min-device-width: 768px) 
+  and (max-device-width: 1112px)  {
+
+
+    /* surroundings */
+
+    .sorrounding-article:hover>.btn-none {
+        display: block;
+        padding: 0.5rem 2rem;
+        margin-top: 0;
+        font-size: 1vw;
+    }  
+
+    .sorrounding-article {
+        padding: 3rem;
+    }
+
+    header {
+        padding: 0.6rem 0;
+    }
+
+    .sorrounding-article {
+        margin-bottom: 1rem;
+    }
+
+    .event p {
+        padding: 0 5rem;
+    }
+
+    .event-gallery{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event img {
+        max-width: 90%;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.5rem 2rem; ;
+    }
+    .container-form {
+        gap: 1rem;
+    }
+
+    .container-form p, input[type="text"], textarea {
+        font-size: 0.8rem;
+    }
+
+    .container-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .field {
+        padding: 0.5rem 0.5rem;
+        background-color: white;
+    }
+
+  }
+
+
+
+  @media screen and (min-device-width: 1112px) 
+  and (max-device-width: 1366px) {
+
+    .container-form p, input[type="text"], textarea {
+        font-size: 1rem;
+    }
+
+    .container-form h2 {
+        font-size: 2rem;
+    }
+
+    .field {
+        padding: 0.5rem 0.5rem;
+        background-color: white;
+    }
+
+    .container-form {
+        gap: 2rem;
+    }
+
+  } 
+
+
+  @media screen and (min-width: 1024px) {
+
+    .home-btn {
+        display: none;
+    }
+    .logo {
+        display: block;
+    }
+
     .main-img, .img-lunch, .img-dinner, .desktop-nav, .lunch p:nth-child(4), .lunch p:nth-child(6), .dinner p:nth-child(4), .dinner p:nth-child(6), .events p:nth-child(3), .lunch h4, .dinner h4 {
         display: block;
     }
@@ -608,7 +738,7 @@ fieldset {
     .grid {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr auto;
         grid-template-areas:
             "hero hero"
             "lunch img1"
@@ -618,9 +748,10 @@ fieldset {
     }
 
     .main-img {
-        background-image: url(pictures/heroimg.jpg);
+        background-image: url(pictures/header1.png);
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
+        height: auto;
         grid-area: hero;
         display: grid;
     }
@@ -640,7 +771,7 @@ fieldset {
 
     .img-lunch {
         grid-area: img1;
-        background-image: url(pictures/dish2.jpeg);
+        background-image: url(pictures/Mussels.jpg);
         background-size: cover;
         width: 100%;
         max-height: auto;
@@ -656,7 +787,7 @@ fieldset {
 
     .img-dinner {
         grid-area: img;
-        background-image: url(pictures/dish2.jpeg);
+        background-image: url(pictures/dishv2.jpg);
         background-size: cover;
         width: 100%;
         max-height: auto;
@@ -718,7 +849,7 @@ fieldset {
 
     .events {
         background-color: var(--dirtywhite);
-        padding: 5vw 20vw;
+        padding: 2rem 12rem;
         line-height: 1.5;
     }
 
@@ -732,7 +863,7 @@ fieldset {
         font-size: 4vw;
         font-weight: lighter;
         padding-top: 10rem;
-        padding-left: 10rem;
+        padding-left: 5rem;
 
     }
 
@@ -764,11 +895,11 @@ fieldset {
         z-index: 100;
     }
 
-    header .desktop-nav>ul>li {
+    .desktop-nav ul li {
         position: relative;
         display: block;
         color: var(--dirtywhite);
-        border-bottom: 1px solid transparent;
+        border-bottom: 2px solid transparent;
     }
 
     .desktop-nav {
@@ -861,9 +992,9 @@ fieldset {
     }
 
     .event p {
-        padding: 0 30rem;
+        padding: 0 15rem;
         font-size: 1.3rem;
-        font-weight: 300
+        font-weight: 300;
     }
 
     /* restaurant desktop */
@@ -892,6 +1023,8 @@ fieldset {
         max-width: 24vw;
     }
 
+
+
     /* Sorroundings desktop */
 
     /* Sorroundings desktop font sizes */
@@ -909,7 +1042,7 @@ fieldset {
         text-align: left;
         line-height: 1.5;
     }
-    .dekstop-sorrounding, .sorrounding-article h2 {
+    .dekstop-sorrounding, .sorrounding-article > h2 {
         display: block;
     }
 
@@ -939,43 +1072,78 @@ fieldset {
         ;
         grid-template-columns: auto;
         align-content: space-evenly;
+        gap: 2rem;
     }
 
-    .dekstop-sorrounding article:first-child {
+    /* .dekstop-sorrounding article:first-child {
         grid-area: img;
-        background-image: url(pictures/opacity-farm.jpg);
+        background-image: url(pictures/nature.jpg);
         position: relative;
+        justify-self: left;
     }
 
     .dekstop-sorrounding>article:first-child h2 {
         position: absolute;
-        bottom: 6rem;
+        bottom: 2rem;
         left: 2rem;
         color: white;
-        padding: 3rem;
+        font-size: 3.8vw;
     }
 
 
     .dekstop-sorrounding article:nth-child(2) {
         grid-area: article;
         background-color: var(--black);
-        padding: 5rem 8rem;
-        justify-self: end;
+        padding: 3.5vw;
+        justify-self: right;
     }
 
     .dekstop-sorrounding-article {
         background-size: cover;
         width: 45vw;
-        height: 45vw;
+        height: 30vw;
     }
 
     .dekstop-sorrounding>article:nth-child(2) h2 {
         color: var(--dirtywhite);
     }
 
+    .dekstop-sorrounding>article:nth-child(2) p {
+        font-weight: 300;
+        font-size: 1.3rem;
+    } */
+
+    .dekstop-sorrounding-article {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        
+        color: var(--dirtywhite);
+    }
+
+    .dekstop-sorrounding-article:nth-child(2) {
+        padding: 4vw;
+        background-color: var(--black);
+    }
+
+    .dekstop-sorrounding-article:first-child {
+        background-image: url(pictures/nature.jpg);
+        background-size: cover;
+        width: 100%;
+        max-height: auto;
+    }
+
+    .dekstop-sorrounding>article:first-child h2 {
+        margin: 20vw 1vw 1vw 1vw;
+    }
+
+    .dekstop-sorrounding>article:nth-child(2) h3 {
+        font-size: 1.5vw;
+    }
+
     .dekstop-sorrounding h3 {
         color: var(--gold);
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         font-size: 1rem;
     }
 
@@ -1000,8 +1168,8 @@ fieldset {
     }
 
     .sorrounding-article {
-        width: 30vw;
-        height: 40vw;
+        width: 28vw;
+        height: 38vw;
         background-image: cover;
         padding: 5rem 5rem;
         margin-bottom: 10rem;
@@ -1038,11 +1206,13 @@ fieldset {
 
     .sorrounding-article:hover>.btn-none {
         display: block;
+        padding: 0.8rem 1rem;
+        margin-top: 0;
     }
 
     .sorrounding-article:hover h2 {
-        text-align: none;
-        padding: 0;
+        text-align: left;
+        padding: 0 0 1rem 0;
         transition: all .5s ease-in-out;
         margin-bottom: 1rem;
     }
@@ -1178,5 +1348,23 @@ fieldset {
 
     .back-color-dinner {
         background-color: var(--black);
+    }
+    
+    
+    .btn {
+        padding: 1vw;
+        font-size: 1vw;
+    }
+
+    .sorrounding-article {
+        padding: 5rem 3rem;
+    }
+
+    .lunch h4, .dinner h4 {
+        font-size: 1.7vw;
+    }
+
+    .lunch p, .dinner p {
+        font-size: 1.4vw;
     }
 }
