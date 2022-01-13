@@ -363,6 +363,13 @@ footer address {
 }
 
 
+/* DINNER MOBILE PAGE */
+
+.dinner-container {
+    background-color: var(--black);
+}
+
+
 /* mobile EVENTS page */
 .event {
     background-color: var(--dirtywhite);
@@ -1128,5 +1135,23 @@ fieldset {
 
     .lunch-suggestion {
         display: flex;
+        flex-direction: column;
+        background-color: var(--darkblue);
+        padding: 2vw 15vw 20vw 15vw;
+        gap: 3vw;
+    }
+
+    .lunch-suggestion > h3{
+        font-size: 3vw;
+        font-weight: 500;
+        color: var(--gold);
+    }
+
+    .lunch-suggestion > p {
+        font-size: 1.8vw;
+        font-style: italic;
+        font-weight: 300;
+        color: white;
+        line-height: 1.5;
     }
 }
