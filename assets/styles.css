@@ -77,6 +77,12 @@ h1, h2, h3, h4, h5 {
     align-items: center;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+}
 
 header div img {
     max-width: 50vw;
