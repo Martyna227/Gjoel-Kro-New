@@ -8,6 +8,7 @@
     --gold: #B8824D;
     --dirtywhite: #C2C3B9;
     --white: #ffff;
+    --hover: #678FA6;
 }
 
 * {
@@ -50,9 +51,14 @@ h1, h2, h3, h4, h5 {
     text-align: center;
     align-self: center;
     text-transform: uppercase;
+    transition: all .3s ease-in-out;
 
 }
 
+.btn:hover {
+    background-color: var(--hover);
+    color: var(--dirtywhite);
+}
 /* mobile homepage*/
 
 .home-container {
